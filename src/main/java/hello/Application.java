@@ -60,9 +60,9 @@ public class Application {
   @PostMapping("/**")
   public String index(@RequestBody ArenaUpdate arenaUpdate) {
     System.out.println(arenaUpdate);
-    System.out.print("------------------------------------------ /n");
-    System.out.print("------------------------------------------ /n");
-    System.out.print("------------------------------------------ /n");
+    System.out.print("------------------------------------------ /n \n");
+    System.out.print("------------------------------------------ /n \n");
+    System.out.print("------------------------------------------ /n \n");
     System.out.print(arenaUpdate.arena.state);
     System.out.print("------------------------------------------ /n");
     System.out.print("------------------------------------------ /n");
@@ -72,7 +72,7 @@ public class Application {
     return value();
   }
   public String value(){
-    String[] commands = new String[]{"F","L"};
+    String[] commands = new String[]{"F","F"};
     int i = new Random().nextInt(2);
     return commands[i];
   }
