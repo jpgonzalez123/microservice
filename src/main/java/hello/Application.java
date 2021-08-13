@@ -62,6 +62,10 @@ public class Application {
     System.out.println(arenaUpdate);
     System.out.print(arenaUpdate.arena.state);
     // return "L";
+    for (var entry : arenaUpdate.arena.state)
+    {
+      System.out.println(entry.getKey() + "/" + entry.getValue());
+    }
     return value();
   }
   public String value(){
