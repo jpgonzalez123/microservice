@@ -60,10 +60,14 @@ public class Application {
   @PostMapping("/**")
   public String index(@RequestBody ArenaUpdate arenaUpdate) {
     System.out.println(arenaUpdate);
+    System.out.println(RequestBody);
+    System.out.println(RequestBody);
     return "L";
     // return value();
   }
   public String value(){
+    JSONParser parse = new JSONParser();
+
     String[] commands = new String[]{"F", "R", "L", "T"};
     int i = new Random().nextInt(4);
     return commands[i];
