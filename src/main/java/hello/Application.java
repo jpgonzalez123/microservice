@@ -63,7 +63,7 @@ public class Application {
     return value();
   }
   public String value(){
-    String[] commands = new String[]{"F", "R", "L", "T"};
+    String[] commands = new String[]{"T"};
     int i = new Random().nextInt(4);
     return commands[i];
   }
