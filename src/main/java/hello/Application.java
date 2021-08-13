@@ -60,8 +60,8 @@ public class Application {
   @PostMapping("/**")
   public String index(@RequestBody ArenaUpdate arenaUpdate) {
     System.out.println(arenaUpdate);
-    return "L";
-    // return value();
+    // return "L";
+    return value();
   }
   public String value(){
     JSONParser parse = new JSONParser();
