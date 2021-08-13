@@ -60,7 +60,7 @@ public class Application {
   @PostMapping("/**")
   public String index(@RequestBody ArenaUpdate arenaUpdate) {
     System.out.println(arenaUpdate);
-    return "T";
+    return "L";
     // return value();
   }
   public String value(){
