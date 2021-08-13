@@ -65,8 +65,8 @@ public class Application {
   }
   public String value(){
     JSONParser parse = new JSONParser();
-    String[] commands = new String[]{"F", "R", "L", "T"};
-    int i = new Random().nextInt(4);
+    String[] commands = new String[]{"F", "L", "L", "T","T","T","F","T"};
+    int i = new Random().nextInt(8);
     return commands[i];
   }
 
