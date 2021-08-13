@@ -60,12 +60,15 @@ public class Application {
   @PostMapping("/**")
   public String index(@RequestBody ArenaUpdate arenaUpdate) {
     System.out.println(arenaUpdate);
+    System.out.print("------------------------------------------ /n");
+    System.out.print("------------------------------------------ /n");
+    System.out.print("------------------------------------------ /n");
     System.out.print(arenaUpdate.arena.state);
+    System.out.print("------------------------------------------ /n");
+    System.out.print("------------------------------------------ /n");
+    System.out.print("------------------------------------------ /n");
+    System.out.print("------------------------------------------ /n");
     // return "L";
-    for (var entry : arenaUpdate.arena.state)
-    {
-      System.out.println(entry.getKey() + "/" + entry.getValue());
-    }
     return value();
   }
   public String value(){
