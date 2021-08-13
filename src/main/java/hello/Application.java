@@ -72,8 +72,8 @@ public class Application {
     return value();
   }
   public String value(){
-    String[] commands = new String[]{"L","T","T"};
-    int i = new Random().nextInt(3);
+    String[] commands = new String[]{"L","T","T","T","T","T"};
+    int i = new Random().nextInt(6);
     return commands[i];
   }
 
